@@ -1,0 +1,21 @@
+@mixin font-face($font-family, $url, $weight: normal, $style: normal) {
+    @font-face {
+        font-weight: $weight;
+        font-family: $font-family;
+        font-style: $style;
+        src: url('~@/assets/fonts/#{$url}.woff') format('woff'), url('~@/assets/fonts/#{$url}.woff') format('woff2');
+    }
+}
+
+@include font-face(Roboto, Robotothin, 100);
+@include font-face(Roboto, Robotothinitalic, 100, italic);
+@include font-face(Roboto, Robotolight, 300);
+@include font-face(Roboto, Robotolightitalic, 300, italic);
+@include font-face(Roboto, Roboto);
+@include font-face(Roboto, Robotoitalic, 400, italic);
+@include font-face(Roboto, Robotomedium, 500);
+@include font-face(Roboto, Robotomediumitalic, 500, italic);
+@include font-face(Roboto, Robotobold, 700);
+@include font-face(Roboto, Robotobolditalic, 700, italic);
+@include font-face(Roboto, Robotoblack, 900);
+@include font-face(Roboto, Robotoblackitalic, 900, italic);

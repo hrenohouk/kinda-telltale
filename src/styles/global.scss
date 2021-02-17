@@ -1,0 +1,17 @@
+@use 'src/styles/fonts';
+
+html, body {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    overflow-x: hidden;
+    background: #ededed;
+}
+
+#app {
+    width: 100%;
+    font-family: 'Roboto', Avenir, Helvetica, Arial, sans-serif;
+    color: #2c3e50;
+}
