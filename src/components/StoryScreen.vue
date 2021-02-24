@@ -48,6 +48,8 @@
         height: 100%;
 
         &__image {
+            object-fit: contain;
+            height: 800px;
             width: 100%;
         }
 
